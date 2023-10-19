@@ -4,17 +4,14 @@ import { Product } from "./Product.js"
 export function getProducts(  ) {
 
     const products = [
-        new Product(1, 'Iphone', 1000),
-        new Product(2, 'Samsung', 800),
-        new Product(3, 'MacOs', 1100)
+        {id:0, name:"IPhone", price: 1000},
+        {id:1, name:"Samsung", price: 8000},
+        {id:2, name:"MacOs", price: 1500},
+        
     ]
     
     return products.map(product => {
-        return {
-            id:product.id,
-            name: product.name,
-            price: product.price
-        }
+        return new Product(product)
     })
 }
 
