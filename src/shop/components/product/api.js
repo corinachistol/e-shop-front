@@ -1,7 +1,7 @@
 import { Product } from "./Product.js"
 
 
-export function getProducts(  ) {
+export function getProducts() {
 
     const products = [
         {id:0, name:"IPhone", price: 1000},
