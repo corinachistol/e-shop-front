@@ -1,3 +1,4 @@
+![image](https://github.com/corinachistol/e-shop-front/assets/115491975/06fa933f-68c2-43d6-ba16-8faf4a20be7f)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
