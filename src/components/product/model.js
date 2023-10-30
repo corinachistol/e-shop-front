@@ -22,15 +22,3 @@ export class CartItem{
     }
 }
 
-// export function CartiItem({quantity}) {
-//     return (
-//         <div>
-//             <tr>
-//                 <td> <Product/> </td>
-//                 {/* the quantity of that product the client has picked */}
-//                 <td>{quantity} </td>  
-//                 <td>Cost of item { <Product.price/> * {quantity} }</td>
-//             </tr>
-//         </div>
-//     )
-// }
