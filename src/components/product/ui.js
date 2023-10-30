@@ -7,7 +7,7 @@ export function Product({name, image,price}  ) {
     return(
         <div className="product">
             <h3>{name}</h3>
-            <img src={image} alt={name} />
+            <img src={image} alt={name} style={{width:"100px"}} />
             {/* <Money productObject={price}/> */}
         </div>
     )
@@ -17,7 +17,8 @@ export function Money({amount,currency}) {
     console.log(amount,currency)
     return (
         <div className="money">
-            <p> {amount} {currency}</p>
+            <p> {amount} </p>
+            <p>{currency}</p>
         </div>
 ) 
 }
@@ -25,7 +26,7 @@ export function Money({amount,currency}) {
 export function Quantity({quantity}) {
     console.log(quantity)
     return (
-        <div>
+        <div className="quantity">
             <button>+</button>
             <p>{quantity}</p> 
             <button>-</button>
@@ -35,14 +36,14 @@ export function Quantity({quantity}) {
 }
 
 
-export function CartItem( {item, quantity, cost}) {
+export function CartItem( {children}) {
 
     return (
         <div className="cart-item">
-            {/* {item} {quantity} {cost} */}
-           <p>{item=<Product key={item.id} name={item.name} image={item.image}   />}</p>
+            {children}
+           {/* <p>{item=<Product key={item.id} product={item}   />}</p>
            <p>{quantity=<Quantity quantity={quantity}/>}</p>
-           <p>{cost=<Money amount={cost.amount} price={cost.currency}/>}</p>
+           <p>{cost=<Money object={cost}/>}</p> */}
         </div>
     )
 }

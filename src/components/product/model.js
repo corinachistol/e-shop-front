@@ -16,10 +16,10 @@ export class Product {
 
 
 export class CartItem{
-    constructor(item, quantity){
+    constructor(item){
         this.item = new Product(item)
-        this.quantity = quantity
-        this.cost = new Money(item.price.amount * quantity, item.price.currency)
+        this.quantity = item.quantity
+        this.cost = new Money((item.price.amount * item.quantity), item.price.currency)
     }
 }
 

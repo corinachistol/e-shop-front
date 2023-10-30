@@ -7,13 +7,13 @@ export function Cart() {
   console.log(cartItems)
 
   return(
-    <div>
+    <div className="cart">
     
         {cartItems.map(product => {
-            return <CartItem key={product.id} item={product} quantity={product.quantity} cost={product.cost} >
-                    {/* <Product key={product.item.id} name={product.item.name}/>
+            return <CartItem key={product.item.id} item={product.item}  >
+                    <Product key={product.item.id} name={product.item.name} image={product.item.image} price={product.item.price.amount}/>
                     <Quantity quantity={product.quantity}/>
-                    <Money cost={product.cost}/> */}
+                    <Money amount={product.cost.amount} currency={product.cost.currency}/>
             </CartItem>
  })}
     </div>
