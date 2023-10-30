@@ -6,7 +6,7 @@ export class Money{
 }
 
 export class Product {
-    constructor(id,name, image, price){
+    constructor({id,name, image, price}){
         this.id = id
         this.name = name 
         this.image = image
@@ -17,9 +17,9 @@ export class Product {
 
 export class CartItem{
     constructor(item, quantity){
-        this.item = item
+        this.item = new Product(item)
         this.quantity = quantity
-        this.cost = new Money( (item.price.amount * quantity), item.price.currency)
+        this.cost = new Money(item.price.amount * quantity, item.price.currency)
     }
 }
 
