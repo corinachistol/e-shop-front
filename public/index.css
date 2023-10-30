@@ -1,0 +1,32 @@
+.cart{
+    display: inline-block;
+}
+
+.cart-item{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+}
+
+/* .product{
+    display: flex;
+    justify-content: left;
+} */
+
+.product h3{
+    text-align: center;
+}
+.product img{
+    display: block;
+}
+
+.money, .quantity{
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+    margin: auto;
+}
+.quantity button{
+    display: inline-block;
+    margin:20px;
+}

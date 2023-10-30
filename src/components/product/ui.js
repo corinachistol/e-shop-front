@@ -17,8 +17,7 @@ export function Money({amount,currency}) {
     console.log(amount,currency)
     return (
         <div className="money">
-            <p> {amount} </p>
-            <p>{currency}</p>
+            <p> {amount} {currency}</p>
         </div>
 ) 
 }
@@ -41,9 +40,6 @@ export function CartItem( {children}) {
     return (
         <div className="cart-item">
             {children}
-           {/* <p>{item=<Product key={item.id} product={item}   />}</p>
-           <p>{quantity=<Quantity quantity={quantity}/>}</p>
-           <p>{cost=<Money object={cost}/>}</p> */}
         </div>
     )
 }
