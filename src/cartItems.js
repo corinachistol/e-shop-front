@@ -1,4 +1,4 @@
-export const items = [
+export const cartItems = [
         {
             id: 1,
             name: " Nike Air Huarache Women's Trainers",

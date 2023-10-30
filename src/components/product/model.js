@@ -1,3 +1,10 @@
+export class Money{
+    constructor(amount,currency){
+        this.amount = amount
+        this.currency = currency
+    }
+}
+
 export class Product {
     constructor(id,name, image, price){
         this.id = id
@@ -7,18 +14,12 @@ export class Product {
     }
 }
 
-export class Money{
-    constructor(amount,currency){
-        this.amount = amount
-        this.currency = currency
-    }
-}
 
 export class CartItem{
     constructor(item, quantity){
         this.item = item
         this.quantity = quantity
-        this.cost = item.price.amount * quantity
+        this.cost = new Money( (item.price.amount * quantity), item.price.currency)
     }
 }
 

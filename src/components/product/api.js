@@ -1,9 +1,9 @@
 import { CartItem } from "./model.js";
-import { items } from "../../cartItems.js";
-console.log(items)
+import { cartItems } from "../../cartItems.js";
+console.log(cartItems)
 
 export function getCartItem( ) {
-    return items.map( item => {
+    return cartItems.map( item => {
         return new CartItem(item)
     })
 }
