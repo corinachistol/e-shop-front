@@ -1,11 +1,35 @@
-.cart{
-    display: inline-block;
+body{
+    background-color: rgb(227, 234, 234);
+    margin: 70px;
 }
 
+/* .App{
+    background-color: white;
+    border: 1px solid red;
+} */
+.cart{
+    display: block;
+    margin: auto;
+    width: 90vw;
+    background-color: white;
+    /* border: 1px solid red;  */
+    border-top: none;
+}
+.cart h2{
+    background-color: rgb(227, 234, 234);
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
 .cart-item{
-    display: flex;
+    display:  flex;
     align-items:flex-start;
     justify-content: left;
+    border:1px solid black;
+    margin: auto;
 }
 
 /* .product{

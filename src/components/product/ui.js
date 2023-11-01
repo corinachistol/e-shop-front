@@ -1,17 +1,25 @@
 import React from "react";
 
-export function Product({name, image,price}  ) {
+export function Product({name,image}  ) {
     console.log(name)
     console.log(image)
-    console.log(price)
+    
     return(
         <div className="product">
             <h3>{name}</h3>
             <img src={image} alt={name} style={{width:"100px"}} />
-            {/* <Money productObject={price}/> */}
         </div>
     )
 }
+
+// export function Image({image}) {
+//     console.log(image)
+//     return(
+//         <div className="image">
+//             <img src={image} alt={Product.name} />
+//         </div>
+//     )
+// }
 
 export function Money({amount,currency}) {
     console.log(amount,currency)
