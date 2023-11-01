@@ -8,7 +8,7 @@ export function Cart() {
 
   return(
     <div className="cart">
-       <h2>My Shopping Cart</h2>
+       {/* <h2>My Shopping Cart</h2> */}
         <tbody>
           {cartItems.map(product => {
           console.log(product)

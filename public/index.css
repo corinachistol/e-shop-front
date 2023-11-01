@@ -3,39 +3,29 @@ body{
     margin: 70px;
 }
 
-/* .App{
-    background-color: white;
-    border: 1px solid red;
-} */
+
+.App h1{
+    /* border: 1px solid orange; */
+    text-align: center;
+}
 .cart{
     display: block;
     margin: auto;
-    width: 90vw;
+    padding: 10px 20px;
+    width: 60vw;
     background-color: white;
-    /* border: 1px solid red;  */
+    /* border: 1px solid black;  */
     border-top: none;
 }
-.cart h2{
-    background-color: rgb(227, 234, 234);
-    padding: 30px;
-    margin: 0;
-    text-align: center;
-}
-
-
 
 .cart-item{
     display:  flex;
-    align-items:flex-start;
-    justify-content: left;
-    border:1px solid black;
-    margin: auto;
+    align-items:center;
+    /* justify-content: center; */
+    /* border:1px solid blue; */
+    border-bottom: 2px solid gray;
 }
 
-/* .product{
-    display: flex;
-    justify-content: left;
-} */
 
 .product h3{
     text-align: center;
