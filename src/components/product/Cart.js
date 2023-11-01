@@ -9,7 +9,6 @@ export function Cart() {
   return(
     <div className="cart">
        {/* <h2>My Shopping Cart</h2> */}
-        <tbody>
           {cartItems.map(product => {
           console.log(product)
             return <CartItem key={product.item.id} item={product.item}  >
@@ -17,9 +16,7 @@ export function Cart() {
                     <Quantity quantity={product.quantity}/>
                     <Money amount={product.cost.amount} currency={product.cost.currency}/>
             </CartItem> 
- })}
-        </tbody>
-        
+ })}     
     </div>
   )
 

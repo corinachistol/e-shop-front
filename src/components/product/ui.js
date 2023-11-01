@@ -1,4 +1,6 @@
 import React from "react";
+import { cartItems } from "../../cartItems";
+console.log(cartItems)
 
 export function Product({name,image}  ) {
     console.log(name)
@@ -32,11 +34,30 @@ export function Money({amount,currency}) {
 
 export function Quantity({quantity}) {
     console.log(quantity)
+
+    function handleClickQty(e) {
+        // console.log("button clicked")
+        // console.log(e.target)
+        if(e.target.innerText === "+"){
+            quantity++
+            cartItems.map(item => item.quantity++)
+
+            console.log(quantity,cartItems)     
+        }
+        if(e.target.innerText === "-") {
+            quantity--
+            if(quantity < 1 ){
+                quantity = 1;
+            }
+            console.log(quantity) 
+        }
+    }
+
     return (
         <div className="quantity">
-            <button>+</button>
+            <button onClick={handleClickQty}>+</button>
             <p>{quantity}</p> 
-            <button>-</button>
+            <button onClick={handleClickQty}>-</button>
         </div>
 
     )
