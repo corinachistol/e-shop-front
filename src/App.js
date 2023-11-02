@@ -1,5 +1,5 @@
 import { Cart  } from "./components/product/Cart";
-import { FilterPanel } from "./components/filterPanel.js/FilterPanel";
+import { FilterPanel } from "./components/filterPanel/FilterPanel";
 
 
 
