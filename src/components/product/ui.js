@@ -1,15 +1,15 @@
 import React from "react";
-import { cartItems } from "../../cartItems";
+import { cartItems } from "../../data/cartItems";
 console.log(cartItems)
 
-export function Product({name,image}  ) {
+export function Product({ name, image }) {
     console.log(name)
     console.log(image)
-    
-    return(
+
+    return (
         <div className="product">
             <h3>{name}</h3>
-            <img src={image} alt={name} style={{width:"100px"}} />
+            <img src={image} alt={name} style={{ width: "100px" }} />
         </div>
     )
 }
@@ -23,40 +23,40 @@ export function Product({name,image}  ) {
 //     )
 // }
 
-export function Money({amount,currency}) {
-    console.log(amount,currency)
+export function Money({ amount, currency }) {
+    console.log(amount, currency)
     return (
         <div className="money">
             <p> {amount} {currency}</p>
         </div>
-) 
+    )
 }
 
-export function Quantity({quantity}) {
+export function Quantity({ quantity }) {
     console.log(quantity)
 
     function handleClickQty(e) {
         // console.log("button clicked")
         // console.log(e.target)
-        if(e.target.innerText === "+"){
+        if (e.target.innerText === "+") {
             quantity++
             cartItems.map(item => item.quantity++)
 
-            console.log(quantity,cartItems)     
+            console.log(quantity, cartItems)
         }
-        if(e.target.innerText === "-") {
+        if (e.target.innerText === "-") {
             quantity--
-            if(quantity < 1 ){
+            if (quantity < 1) {
                 quantity = 1;
             }
-            console.log(quantity) 
+            console.log(quantity)
         }
     }
 
     return (
         <div className="quantity">
             <button onClick={handleClickQty}>+</button>
-            <p>{quantity}</p> 
+            <p>{quantity}</p>
             <button onClick={handleClickQty}>-</button>
         </div>
 
@@ -64,7 +64,7 @@ export function Quantity({quantity}) {
 }
 
 
-export function CartItem( {children}) {
+export function CartItem({ children }) {
 
     return (
         <div className="cart-item">

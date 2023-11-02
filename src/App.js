@@ -1,13 +1,16 @@
 import { Cart  } from "./components/product/Cart";
+import { FilterPanel } from "./components/filterPanel.js/FilterPanel";
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1>My Shopping Cart</h1>
+      {/* <h1>My Shopping Cart</h1> */}
+      <h4>Filter List</h4>
     
-     <Cart/>
+     {/* <Cart/> */}
+     <FilterPanel />
       
   
     </div>
