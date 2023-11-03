@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       {/* <h1>My Shopping Cart</h1> */}
-      <h4>Filter List</h4>
-    
      {/* <Cart/> */}
+     
+      <h4>Filter List</h4>
      <FilterPanel />
       
   

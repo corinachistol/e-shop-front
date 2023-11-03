@@ -4,8 +4,13 @@ body{
 }
 
 
+
 .App h1{
     /* border: 1px solid orange; */
+    text-align: center;
+}
+
+.App h4{
     text-align: center;
 }
 .cart{
@@ -43,4 +48,35 @@ body{
 .quantity button{
     display: inline-block;
     margin:20px;
+}
+
+.container-filter{
+    /* border:1px solid red; */
+    
+}
+.label{
+    display: block;
+    padding: 5px;
+}
+
+.input{
+    display: none;
+    
+}
+
+.span{
+    color: #89A;
+}
+.input:checked + span{
+    color:rgb(23, 24, 24);
+    cursor: pointer;
+}
+
+.input + span::before{
+    content:'◎';
+    padding-right: 5px;
+}
+
+.input:checked + span::before{
+    content:'◉';
 }
